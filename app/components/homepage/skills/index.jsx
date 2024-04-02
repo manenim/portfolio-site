@@ -49,6 +49,7 @@ function Skills() {
                   <div className="h-8 sm:h-10">
                     <Image
                       src={skillsImage(skill)?.src}
+                      // src="/svg/skills/nestJS.svg"
                       alt={skill}
                       width={40}
                       height={40}

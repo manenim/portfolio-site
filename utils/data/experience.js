@@ -1,20 +1,20 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: "Software Developer",
+    company: "Talosmart Ltd. - Lagos, Nigeria",
+    // duration: "(Jan 2022 - Present)"
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: "Backend Engineer",
+    company: "6ixth Ideas - Manitoba, Canada",
+    // duration: "(Jun 2021 - Jan 2022)",
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
-  }
-]
+    title: "Software Developer",
+    company: "Viran edTech - Lagos, Nigeria.",
+    // duration: "(Jan 2018 - Present)",
+  },
+];
