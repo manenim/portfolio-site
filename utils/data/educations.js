@@ -1,7 +1,7 @@
 export const educations = [
   {
     id: 1,
-    title: "Cloud Developer Nano-Degree",
+    title: "AWS Cloud Developer Nano-Degree",
     // duration: "2017 - 2021",
     institution: "ALX-T",
   },
