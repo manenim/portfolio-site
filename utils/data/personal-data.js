@@ -9,7 +9,7 @@ export const personalData = {
   address: "Abuja, Federal Capital Territory, Nigeria",
   github: "https://github.com/manenim",
   facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/manenimabasi-udoh-42b480253/",
+  linkedIn: "https://www.linkedin.com/in/manenimabasi-udoh/",
   twitter: "https://twitter.com/manenimabasi",
   stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
   leetcode: "https://leetcode.com/said3812/",

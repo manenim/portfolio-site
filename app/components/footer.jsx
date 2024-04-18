@@ -21,7 +21,7 @@ function Footer() {
             </Link>
           </p>
           <div className="flex items-center gap-5">
-            <Link
+            {/* <Link
               target="_blank"
               href="https://github.com/said7388/developer-portfolio"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]">
@@ -34,7 +34,7 @@ function Footer() {
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]">
               <CgGitFork />
               <span>Fork</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
