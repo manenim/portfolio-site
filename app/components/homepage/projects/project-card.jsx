@@ -75,7 +75,7 @@ function ProjectCard({ project }) {
             <FaPlay />
           </div>
           <p className="ml-4 opacity-[.9]">
-            Demo
+            {project.type !== "FE" ? "View Swagger Docs" : "Demo"}
           </p>
         </Link>}
 

@@ -23,6 +23,7 @@ export const projectsData = [
     code: "https://github.com/manenim/apple-store",
     demo: "https://apple-store-hfy2.vercel.app",
     image: crefin,
+    type: "FE",
   },
   {
     id: 2,
@@ -43,6 +44,7 @@ export const projectsData = [
     code: "https://github.com/manenim/eccomfrontend",
     demo: "https://sparkly-granita-b076ba.netlify.app/",
     image: travel,
+    type: "FE",
   },
   {
     id: 3,
@@ -65,19 +67,21 @@ export const projectsData = [
     ],
     code: "",
     role: "Full Stack Developer",
+    type: "FE",
     demo: "",
     image: realEstate,
   },
   {
     id: 4,
-    name: "Newsroom Management",
+    name: "Authorworks API",
     description:
-      "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-    tools: ["NextJS", "Material UI", "Redux", "Sun Editor", "Calendar"],
-    code: "",
-    demo: "",
+      "Built an API using Node.js, Express, and MongoDB to manage author and book information. This API allows users to perform CRUD operations on authors and their associated books, enabling applications to interact with author and book data.",
+    tools: ["NodeJs", "ExpressJS", "MongoDB", "Mongoose", "Joi", "Crypto-JS"],
+    code: "https://github.com/manenim/shopnow-api/",
+    demo: "https://authorworks-api.onrender.com/docs/",
+    type: "BE",
     image: ayla,
-    role: "Full Stack Developer",
+    role: "Backend Developer",
   },
 ];
 
