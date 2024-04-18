@@ -78,7 +78,7 @@ export const projectsData = [
     demo: "https://authorworks-api.onrender.com/docs/",
     type: "BE",
     image: ayla,
-    role: "Backend Developer",
+    role: "Backend Engineer",
   },
 ];
 
