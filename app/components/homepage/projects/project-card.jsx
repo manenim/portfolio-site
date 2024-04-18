@@ -1,6 +1,9 @@
 // @flow strict
 
+import Link from 'next/link';
 import * as React from 'react';
+import { FaCode, FaPlay } from "react-icons/fa";
+
 
 function ProjectCard({ project }) {
 
@@ -26,7 +29,7 @@ function ProjectCard({ project }) {
             <span className="mr-2 text-pink-500">const</span>
             <span className="mr-2 text-white">project</span>
             <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
+            <span className="text-gray-400">{"{"}</span>
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
@@ -38,17 +41,14 @@ function ProjectCard({ project }) {
           <div className="ml-4 lg:ml-8 mr-2">
             <span className=" text-white">tools:</span>
             <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
+            {project.tools.map((tag, i) => (
+              <React.Fragment key={i}>
+                <span className="text-amber-300">{tag}</span>
+                {project.tools.length - 1 !== i && (
+                  <span className="text-gray-400">{`', '`}</span>
+                )}
+              </React.Fragment>
+            ))}
             <span className="text-gray-400">{"],"}</span>
           </div>
           <div>
@@ -58,11 +58,36 @@ function ProjectCard({ project }) {
           </div>
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
-            <span className="text-cyan-400">{' ' + project.description}</span>
+            <span className="text-cyan-400">{" " + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
-          <div><span className="text-gray-400">{`};`}</span></div>
+          <div>
+            <span className="text-gray-400">{`};`}</span>
+          </div>
         </code>
+      </div>
+      <div className="flex items-center justify-between w-full px-4 lg:px-8 pb-3">
+        {project.demo && <Link
+          href={project.demo}
+          target="_blank"
+          className="flex items-center">
+          <div className="flex justify-center items-center w-10 h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
+            <FaPlay />
+          </div>
+          <p className="ml-4 opacity-[.9]">
+            Demo
+          </p>
+        </Link>}
+
+        <Link
+          href={project.code ? project.code : "https://google.com"}
+          target="_blank"
+          className="flex items-center">
+          <p className="mr-4 opacity-[.8]">Source Code</p>
+          <div className="flex justify-center items-center w-10 h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
+            <FaCode />
+          </div>
+        </Link>
       </div>
     </div>
   );
