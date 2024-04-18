@@ -48,7 +48,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Breeze-UI (Component Library)",
+    name: "Breeze-UI",
     description:
       "Developed a custom component library named Breeze UI using React for building user interfaces. This library leverages Storybook for interactive component documentation and Tailwind CSS for rapid and consistent styling.",
     tools: [

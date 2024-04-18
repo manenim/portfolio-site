@@ -67,24 +67,28 @@ function ProjectCard({ project }) {
         </code>
       </div>
       <div className="flex items-center justify-between w-full px-4 lg:px-8 pb-3">
-        {project.demo && <Link
-          href={project.demo}
-          target="_blank"
-          className="flex items-center">
-          <div className="flex justify-center items-center w-10 h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
-            <FaPlay />
-          </div>
-          <p className="ml-4 opacity-[.9]">
-            {project.type !== "FE" ? "View Swagger Docs" : "Demo"}
-          </p>
-        </Link>}
+        {project.demo && (
+          <Link
+            href={project.demo}
+            target="_blank"
+            className="flex items-center">
+            <div className="flex justify-center items-center w-9 h-9 md:w-10 md:h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
+              <FaPlay />
+            </div>
+            <p className="ml-4 opacity-[.9] text-[.8rem] md:text-[1rem]">
+              {project.type !== "FE" ? "View Docs" : "Demo"}
+            </p>
+          </Link>
+        )}
 
         <Link
           href={project.code ? project.code : "https://google.com"}
           target="_blank"
           className="flex items-center">
-          <p className="mr-4 opacity-[.8]">Source Code</p>
-          <div className="flex justify-center items-center w-10 h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
+          <p className="mr-4 opacity-[.8] text-[.8rem] md:text-[1rem]">
+            Source Code
+          </p>
+          <div className="flex justify-center items-center w-9 h-9 md:w-10 md:h-10 rounded-full border-2 border-[#EFF3F4] text-[#EFF3F4] transition-all duration-300 hover:bg-[#231d4b] hover:text-violet-600 hover:border-[#0F0C41] hover:scale-110 decoration-clone cursor-pointer no-underline delay-[0.3s]">
             <FaCode />
           </div>
         </Link>
