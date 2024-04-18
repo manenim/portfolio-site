@@ -63,7 +63,7 @@ export const projectsData = [
       "class-variance-authority (CVA)",
     ],
     code: "https://github.com/manenim/breeze-ui/",
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     type: "FE",
     demo: "",
     image: realEstate,
