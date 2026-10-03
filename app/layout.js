@@ -9,9 +9,9 @@ import './css/globals.scss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Manenimabasi Udoh",
+  title: "Manenimabasi Udoh | Senior Backend Engineer",
   description:
-    "I am a senior software developer with over 8 years of experience building secure, and scalable web applications.",
+    "Senior Backend Engineer building Go and TypeScript services for payments, wallets, and distributed workflows. CKA and AWS Certified Solutions Architect.",
 };
 
 export default function RootLayout({ children }) {

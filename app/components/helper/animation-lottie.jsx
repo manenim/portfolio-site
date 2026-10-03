@@ -1,6 +1,9 @@
 "use client";
 
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+// Lottie creates DOM elements at module load, so it must load in the browser.
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const AnimationLottie = ({ animationPath, width }) => {
   const defaultOptions = {

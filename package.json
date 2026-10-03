@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
+  "description": "Backend engineering portfolio of Manenimabasi Udoh",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -27,5 +27,8 @@
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

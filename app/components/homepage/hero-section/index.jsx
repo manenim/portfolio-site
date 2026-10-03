@@ -27,7 +27,7 @@ function HeroSection() {
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
             Hello, <br />
             This is <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {`, I'm a `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>.
           </h1>
 
@@ -107,23 +107,14 @@ function HeroSection() {
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
+                {personalData.skills.map((skill, index) => (
+                  <span key={skill}>
+                    <span className="text-amber-300">{skill}</span>
+                    {index < personalData.skills.length - 1 && (
+                      <span className="text-gray-400">{"', '"}</span>
+                    )}
+                  </span>
+                ))}
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
@@ -135,9 +126,9 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">
-                  yearsOfExperience:
+                  softwareSince:
                 </span>
-                <span className="text-orange-400">8 years</span>
+                <span className="text-orange-400">{'"August 2017"'}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
@@ -162,7 +153,7 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">yearsOfExperience</span>
+                <span className="mr-2 text-white">softwareSince</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
               <div>
@@ -174,7 +165,7 @@ function HeroSection() {
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
                 <span className="mr-2 text-white">skills.length</span>
                 <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">6</span>
+                <span className="text-orange-400">5</span>
               </div>
               <div>
                 <span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span>
