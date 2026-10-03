@@ -19,7 +19,7 @@ export const experiences = [
   },
   {
     "id": 4,
-    "title": "Next.js / React Developer",
+    "title": "Software Engineer",
     "company": "Talosmart",
     "duration": "Sep 2023 - Dec 2023"
   },

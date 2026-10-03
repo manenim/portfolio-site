@@ -15,7 +15,7 @@ function Footer() {
             © Developer Portfolio by{" "}
             <Link
               target="_blank"
-              href="https://www.linkedin.com/in/manenimabasi-udoh-42b480253/"
+              href="https://www.linkedin.com/in/manenimabasi-udoh/"
               className="text-[#16f2b3]">
               Manenimabasi Udoh
             </Link>
