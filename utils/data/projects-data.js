@@ -18,7 +18,7 @@ export const projectsData = [
   {
     "id": 2,
     "name": "Distributed Rate Limiter",
-    "description": "Built a Go token-bucket rate limiter with atomic Redis/Lua refill and deduction, in-memory support, context cancellation, and fail-open/fail-closed policies.",
+    "description": "Built a Go token-bucket rate limiter with in-memory and Redis backends, atomic Redis/Lua refill and deduction, and decision metrics.",
     "tools": [
       "Go",
       "Redis",
